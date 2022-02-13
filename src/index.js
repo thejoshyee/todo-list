@@ -1,8 +1,12 @@
 import "./styles.css"
+import view from "./view"
 
-function app() {
 
-    
-  }
+const initializePage = () => {
   
-  document.body.appendChild(app());
+  return view()
+
+}
+
+
+initializePage()
