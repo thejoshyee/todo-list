@@ -43,6 +43,36 @@ body {
     1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
 }
 
+.nav-container {
+  grid-area: nav;
+  align-self: center;
+  padding-top: 1.4em;
+  margin-left: -1.5em;
+  padding-bottom: 1em;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 
 /* header */
 
@@ -59,6 +89,7 @@ body {
 
 .all-tasks {
   grid-area: lists;
+  display: inline-block;
 }
 
 .task-list {
@@ -270,10 +301,7 @@ form {
   letter-spacing: -2px;
 }
 
-
 @media (max-width: 840px) {
-
-  /* hamburger */
 
   body {
     margin: 0;
@@ -290,19 +318,16 @@ form {
       1fr 1fr 1fr 1fr;
   }
 
-  .todo-list {
-      margin: 1em;
-    }
-
     .nav-container {
       grid-area: nav;
       align-self: center;
+      margin-top: 1em;
+      margin-left: 4em;
+      margin-right: 1.5em;
+
     }
 
-    .container {
-      display: inline-block;
-      cursor: pointer;
-    }
+
 
     .bar1, .bar2, .bar3 {
       width: 35px;
@@ -324,6 +349,36 @@ form {
       transform: rotate(45deg) translate(-8px, -8px);
     }
 
+    .title {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .all-tasks {
+      margin-left: 1em;
+      margin-bottom: 1em;
+      visibility: hidden;
+    }
+
+    .task-list-title {
+      margin-top: 0.5em;
+      margin-bottom: 0;
+    }
+
+    .todo-list {
+      margin: 0.8em;
+    }
+
+    .task-count {
+      margin-left: 2em;
+    }
+
+}
 
 
+@media only screen and (min-width: 842px) {
+  .all-tasks {
+    visibility: visible;
+    opacity: 1;
+  }
 }
