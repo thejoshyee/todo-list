@@ -357,7 +357,7 @@ form {
     .all-tasks {
       margin-left: 1em;
       margin-bottom: 1em;
-      visibility: hidden;
+
     }
 
     .task-list-title {
@@ -375,10 +375,3 @@ form {
 
 }
 
-
-@media only screen and (min-width: 842px) {
-  .all-tasks {
-    visibility: visible;
-    opacity: 1;
-  }
-}
