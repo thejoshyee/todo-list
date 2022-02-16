@@ -26,3 +26,4 @@ This was for the todo list project with The Odin Project. The app allows you to 
 
 
 ## Live Demo
+<a href="https://620d85f64cee4eaa03b3c16f--heuristic-panini-f5a847.netlify.app/">TODOist app</a>
