@@ -19,26 +19,6 @@ function toggleProjects() {
     }
   }
 
-
-//   function toggleProjects() {
-//     const allTasks = document.querySelector(".all-tasks")
-
-//     if (allTasks.style.visibility == "visible") { 
-//         allTasks.style.visibility = "hidden"
-//         allTasks.style.opacity = "0"
-//         allTasks.style.transition = "200ms"
-//     } else {
-//         allTasks.style.visibility = "visible"
-//         allTasks.style.transition = "200ms"
-//         allTasks.style.opacity = "1"
-
-//     }
-//   }
-
-
-// project lists functions
-
-//project lists
 const listsContainer = document.querySelector("[data-lists]")
 const newListForm = document.querySelector("[data-new-list-form]")
 const newListInput = document.querySelector("[data-new-list-input]")
@@ -173,13 +153,11 @@ function renderTasks(selectedList) {
     })
 }
 
-
 function renderTaskCount(selectedList) {
     const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
     const taskString = incompleteTaskCount === 1 ? "task" : "tasks"
     listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`
 }
-
 
 function renderLists() {
     lists.forEach(list => {
