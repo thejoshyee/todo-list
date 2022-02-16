@@ -147,6 +147,9 @@ form {
   font-size: inherit;
   outline: none;
   padding: 0.25em;
+  max-width: 75%;
+  position: relative;
+
 
   transition: border-bottom 150ms ease-in;
   order: 2;
@@ -368,6 +371,17 @@ form {
     .task-count {
       margin-left: 2em;
     }
+
+    .todo-list {
+      padding-bottom: 3em;
+    }
+
+    .delete-things {
+      color: var(--clr-primary);
+    }
+
+
+
 
 }
 
